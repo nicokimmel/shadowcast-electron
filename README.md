@@ -1,5 +1,5 @@
 # genkiarcade-electron
-Shows the output of the ShadowCast by Genki. 🎮
+Shows the output of ShadowCast by Genki. 🎮
 
 ## Use cases
 
