@@ -1,4 +1,3 @@
-node_modules/
 out/
-src/public/images
+node_modules/
 package-lock.json

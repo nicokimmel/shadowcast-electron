@@ -1,7 +1,7 @@
 {
-  "name": "genkiarcade-electron",
+  "name": "shadowcast-electron",
   "version": "1.0.0",
-  "description": "",
+  "description": "Shows the videostream of ShadowCast by Genki.",
   "main": "src/arcade.js",
   "scripts": {
     "start": "electron-forge start",
@@ -20,6 +20,6 @@
     "electron": "^27.0.2"
   },
   "dependencies": {
-    "electron-squirrel-startup": "^1.0.0"
+    "@electron-forge/maker-flatpak": "^6.4.2"
   }
 }
