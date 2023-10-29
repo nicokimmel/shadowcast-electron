@@ -15,7 +15,7 @@ Shows the output of [ShadowCast](https://www.genkithings.com/products/shadowcast
 ## Build it yourself
 
 1. Run `npm install` to install all dependencies.
-2. Edit `forge.config.js` so it matches your os.  
+2. Optional: If you want an icon you have to place one at `src/public/icon.png`
+3. Edit `forge.config.js` so it matches your OS.  
     (Check the [official documentation](https://www.electronforge.io/config/makers) or ask ChatGPT to edit the file.)
-3. Optional: if you want an icon you have to place one at `src/public/icon.png`
 4. Run `npm run make` to get a distributable.
