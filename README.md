@@ -15,6 +15,6 @@ Shows the output of the ShadowCast by Genki. 🎮
 ## Build it yourself
 
 1. Run `npm install` to install all dependencies.
-2. Edit the `makers` part of `forge.config.js` so it matches your os.  
+2. Edit `forge.config.js` so it matches your os.  
     (Check the [official documentation](https://www.electronforge.io/config/makers) or ask ChatGPT to edit the file.)
 3. Run `npm run make` to get a distributable.
