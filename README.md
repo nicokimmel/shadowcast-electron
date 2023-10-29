@@ -1,5 +1,5 @@
 # genkiarcade-electron
-Shows the output of ShadowCast by Genki. 🎮
+Shows the output of [ShadowCast](https://www.genkithings.com/products/shadowcast) by Genki. 🎮
 
 ## Use cases
 
