@@ -16,10 +16,9 @@
     "@electron-forge/maker-rpm": "^6.4.2",
     "@electron-forge/maker-squirrel": "^6.4.2",
     "@electron-forge/maker-zip": "^6.4.2",
+    "@electron-forge/maker-flatpak": "^6.4.2",
     "@electron-forge/plugin-auto-unpack-natives": "^6.4.2",
     "electron": "^27.0.2"
   },
-  "dependencies": {
-    "@electron-forge/maker-flatpak": "^6.4.2"
-  }
+  "dependencies": {}
 }
