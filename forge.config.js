@@ -1,7 +1,7 @@
 module.exports = {
   packagerConfig: {
     asar: true,
-    icon: "src/images/icon-128x128.png",
+    icon: "./src/public/images/icon.png",
     extraResources: [
       {
         from: "./src/public",

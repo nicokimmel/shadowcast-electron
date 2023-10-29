@@ -1,4 +1,4 @@
 node_modules/
 out/
-src/images
+src/public/images
 package-lock.json

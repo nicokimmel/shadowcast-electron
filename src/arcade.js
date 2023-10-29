@@ -5,10 +5,10 @@ const createWindow = () => {
         width: 854,
         height: 480,
         autoHideMenuBar: true,
-        icon: "https://arcade.genkithings.com/images/icons/icon-128x128.png"
+        icon: "./src/public/images/icon.png"
     })
 
-    win.loadFile("src/public/index.html")
+    win.loadFile("./src/public/index.html")
 }
 
 app.whenReady().then(() => {
