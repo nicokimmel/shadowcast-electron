@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>de.nicokimmel.shadowcast-electron</id>
+  <launchable type="desktop-id">de.nicokimmel.shadowcast-electron.desktop</launchable>
+  <name>shadowcast-electron</name>
+  <summary>Shows the videostream of ShadowCast by Genki</summary>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0</project_license>
+  <developer_name>Nico Kimmel</developer_name>
+  <url type="homepage">https://github.com/nicokimmel/shadowcast-electron</url>
+  <content_rating type="oars-1.0" />
+  <provides>
+    <id>de.nicokimmel.shadowcast-electron.desktop</id>
+  </provides>
+</component>

@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=shadowcast-electron
+GenericName=Console Stream
+Comment=Shows the videostream of ShadowCast by Genki
+Keywords=ShadowCast;Genki
+Exec=/app/bin/run.sh
+Icon=de.nicokimmel.shadowcast-electron
+Categories=Game;Utility;AudioVideo;
+Terminal=false
