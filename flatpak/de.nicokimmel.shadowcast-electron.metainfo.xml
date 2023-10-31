@@ -12,4 +12,7 @@
   <provides>
     <id>de.nicokimmel.shadowcast-electron.desktop</id>
   </provides>
+  <description>
+    <p>Shows the videostream of ShadowCast by Genki</p>
+  <description>
 </component>

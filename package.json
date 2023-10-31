@@ -1,6 +1,6 @@
 {
   "name": "shadowcast-electron",
-  "version": "1.0.3",
+  "version": "1.0.0",
   "description": "Shows the videostream of ShadowCast by Genki.",
   "main": "src/arcade.js",
   "scripts": {

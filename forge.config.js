@@ -1,6 +1,6 @@
 module.exports = {
   packagerConfig: {
-    asar: true,
+    asar: false,
     icon: "src/public/images/icon",
     extraResources: [
       {
@@ -15,11 +15,5 @@ module.exports = {
       name: "@electron-forge/maker-zip",
       platforms: ["linux"],
     }
-  ],
-  plugins: [
-    {
-      name: "@electron-forge/plugin-auto-unpack-natives",
-      config: {},
-    },
-  ],
+  ]
 };
