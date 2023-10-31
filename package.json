@@ -1,17 +1,19 @@
 {
   "name": "shadowcast-electron",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "Shows the videostream of ShadowCast by Genki.",
   "main": "src/arcade.js",
   "scripts": {
-    "start": "electron .",
-    "build": "electron-builder --linux dir"
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make"
   },
-  "author": "Nico Kimmel",
+  "author": "",
   "license": "ISC",
   "devDependencies": {
-    "electron": "^27.0.2",
-    "electron-builder": "^24.6.4"
-  },
-  "dependencies": {}
+    "@electron-forge/cli": "^6.4.2",
+    "@electron-forge/maker-zip": "^6.4.2",
+    "@electron-forge/plugin-auto-unpack-natives": "^6.4.2",
+    "electron": "^27.0.2"
+  }
 }
