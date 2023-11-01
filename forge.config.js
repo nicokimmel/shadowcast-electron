@@ -1,13 +1,7 @@
 module.exports = {
   packagerConfig: {
     asar: false,
-    icon: "src/public/images/icon",
-    extraResources: [
-      {
-        from: "src/public",
-        to: "resources/app/public",
-      },
-    ],
+    icon: "src/public/images/icon"
   },
   rebuildConfig: {},
   makers: [
@@ -15,4 +9,4 @@ module.exports = {
       name: "@electron-forge/maker-zip"
     }
   ]
-};
+}
