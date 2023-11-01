@@ -3,7 +3,6 @@ module.exports = {
     asar: false,
     icon: "src/public/images/icon"
   },
-  rebuildConfig: {},
   makers: [
     {
       name: "@electron-forge/maker-zip"
