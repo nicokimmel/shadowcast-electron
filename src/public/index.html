@@ -15,22 +15,25 @@
     <audio autoplay="true" id="microphone" class="d-none"></audio>
     <div id="overlay" class="position-absolute top-0 start-0 vw-100 vh-100">
         <div id="menu" class="position-absolute bottom-0 start-0 vw-100 d-flex align-items-center p-3 gap-2">
-            <button type="button" class="btn btn-primary fs-5"><i class="bi bi-camera-fill"></i></button>
-            <button type="button" class="btn btn-primary fs-5"><i class="bi bi-camera-reels-fill"></i></button>
-            <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-                <input type="radio" class="btn-check" name="btnradio" id="sd" autocomplete="off" checked>
+            <button type="button" class="btn btn-lg btn-primary fs-5" id="screenshot"><i
+                    class="bi bi-camera-fill"></i></button>
+            <button type="button" class="btn btn-lg btn-primary fs-5" id="record" disabled><i
+                    class="bi bi-camera-reels-fill"></i></button>
+            <div class="btn-group btn-group-lg" role="group" aria-label="Basic radio toggle button group">
+                <input type="radio" class="btn-check" name="btnradio" id="sd" autocomplete="off" disabled>
                 <label class="btn btn-outline-primary" for="btnradio1"><i class="bi bi-badge-sd-fill"></i></label>
-              
-                <input type="radio" class="btn-check" name="btnradio" id="hd" autocomplete="off">
+
+                <input type="radio" class="btn-check" name="btnradio" id="hd" autocomplete="off" disabled checked>
                 <label class="btn btn-outline-primary" for="btnradio2"><i class="bi bi-badge-hd-fill"></i></label>
-              </div>
+            </div>
             <div class="spacer"></div>
-            <input type="range" id="volume">
+            <input type="range" id="volume" min="0" max="100">
         </div>
     </div>
     <script src="js/lib/bootstrap.min.js"></script>
     <script src="js/video.js"></script>
     <script src="js/audio.js"></script>
+    <script src="js/overlay.js"></script>
 </body>
 
 </html>

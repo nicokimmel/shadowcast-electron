@@ -1,4 +1,5 @@
 var audioElement = document.getElementById("microphone")
+var volumeSlider = document.getElementById("volume")
 
 var audioConstraints = {
     video: false,
@@ -42,13 +43,19 @@ function startAudioStream() {
                 //const audioSource = audioContext.createMediaStreamSource(stream)
                 //audioSource.connect(audioContext.destination)
                 audioElement.srcObject = stream
-                audioElement.volume = 0.2
             })
             .catch(function (error) {
                 console.log(error)
                 console.log("Cound not connect to microphone!")
             })
     })
+}
+
+function setVolume(volume, slider) {
+    audioElement.volume = volume / 100
+    if (slider) {
+        volumeSlider.value = volume
+    }
 }
 
 startAudioStream()

@@ -40,4 +40,17 @@ function startVideoStream() {
     })
 }
 
+function takeScreenshot() {
+    let canvas = document.createElement("canvas")
+    canvas.width = videoElement.videoWidth
+    canvas.height = videoElement.videoHeight
+    let ctx = canvas.getContext("2d")
+    ctx.drawImage(videoElement, 0, 0, canvas.width, canvas.height)
+    let dataURL = canvas.toDataURL("image/png")
+    let link = document.createElement("a")
+    link.href = dataURL
+    link.download = "screenshot.png"
+    link.click()
+}
+
 startVideoStream()
