@@ -1,6 +1,6 @@
 var video = document.querySelector("#camera")
 
-var constraints = {
+var videoConstraints = {
     audio: false,
     video: {
         width: { ideal: 1920 },
@@ -8,19 +8,36 @@ var constraints = {
     }
 }
 
-navigator.mediaDevices.enumerateDevices().then(function (devices) {
-    devices.forEach((device) => {
-        if (device.label.startsWith("ShadowCast") && device.kind === "videoinput") {
-            constraints.deviceId = { exact: devices[i].deviceId }
-            console.log(device)
-        }
+function getVideoDeviceId(callback) {
+    navigator.mediaDevices.enumerateDevices().then(function (devices) {
+        let deviceId = null
+        devices.forEach((device) => {
+            if (device.label.startsWith("ShadowCast") && device.kind === "videoinput") {
+                console.log("ShadowCast Video Device found!")
+                console.log(device)
+                deviceId = device.deviceId
+                return
+            }
+        })
+        callback(deviceId)
     })
-})
+}
 
-navigator.mediaDevices.getUserMedia(constraints)
-    .then(function (stream) {
-        video.srcObject = stream
+function startVideoStream() {
+    getVideoDeviceId((deviceId) => {
+        if (!deviceId) {
+            return
+        }
+        videoConstraints.video.deviceId = { exact: deviceId }
+        navigator.mediaDevices.getUserMedia(videoConstraints)
+            .then(function (stream) {
+                video.srcObject = stream
+            })
+            .catch(function (error) {
+                console.log("Cound not connect to camera!")
+                console.log(error)
+            })
     })
-    .catch(function (error) {
-        console.log("Cound not connect to camera!")
-    })
+}
+
+startVideoStream()
