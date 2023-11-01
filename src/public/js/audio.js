@@ -21,7 +21,6 @@ function getAudioDeviceId(callback) {
             if (device.label.startsWith("ShadowCast") && device.kind === "audioinput") {
                 console.log("ShadowCast Audio Device found!")
                 console.log(device)
-                console.log(device.getCapabilities())
                 deviceId = device.deviceId
                 return
             }
@@ -36,16 +35,11 @@ function startAudioStream() {
             return
         }
         audioConstraints.audio.deviceId = { exact: deviceId }
-        console.log(audioConstraints)
         navigator.mediaDevices.getUserMedia(audioConstraints)
             .then(function (stream) {
-                //const audioContext = new (window.AudioContext)({ sampleRate: 22050 })
-                //const audioSource = audioContext.createMediaStreamSource(stream)
-                //audioSource.connect(audioContext.destination)
                 audioElement.srcObject = stream
             })
             .catch(function (error) {
-                console.log(error)
                 console.log("Cound not connect to microphone!")
             })
     })

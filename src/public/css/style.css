@@ -11,6 +11,7 @@ body {
 }
 
 #menu {
+    visibility: hidden;
     height: 64px;
     background: rgba(37, 37, 37, 0.6);
 }

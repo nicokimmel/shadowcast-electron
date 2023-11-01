@@ -35,7 +35,6 @@ function startVideoStream() {
             })
             .catch(function (error) {
                 console.log("Cound not connect to camera!")
-                console.log(error)
             })
     })
 }
