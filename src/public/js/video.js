@@ -1,4 +1,4 @@
-var video = document.querySelector("#camera")
+var videoElement = document.getElementById("camera")
 
 var videoConstraints = {
     audio: false,
@@ -31,7 +31,7 @@ function startVideoStream() {
         videoConstraints.video.deviceId = { exact: deviceId }
         navigator.mediaDevices.getUserMedia(videoConstraints)
             .then(function (stream) {
-                video.srcObject = stream
+                videoElement.srcObject = stream
             })
             .catch(function (error) {
                 console.log("Cound not connect to camera!")

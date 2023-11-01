@@ -1,11 +1,15 @@
-var audioElement = document.querySelector("#microphone")
+var audioElement = document.getElementById("microphone")
 
 var audioConstraints = {
     video: false,
     audio: {
         autoGainControl: false,
         echoCancellation: false,
-        noiseSuppression: false
+        noiseSuppression: false,
+        channelCount: 1,
+        latency: 0,
+        sampleRate: 48000,
+        sampleSize: 16
     }
 }
 
@@ -16,6 +20,7 @@ function getAudioDeviceId(callback) {
             if (device.label.startsWith("ShadowCast") && device.kind === "audioinput") {
                 console.log("ShadowCast Audio Device found!")
                 console.log(device)
+                console.log(device.getCapabilities())
                 deviceId = device.deviceId
                 return
             }
@@ -37,6 +42,7 @@ function startAudioStream() {
                 //const audioSource = audioContext.createMediaStreamSource(stream)
                 //audioSource.connect(audioContext.destination)
                 audioElement.srcObject = stream
+                audioElement.volume = 0.2
             })
             .catch(function (error) {
                 console.log(error)

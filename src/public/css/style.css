@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
     overflow: hidden;
@@ -6,10 +7,21 @@ html, body {
 }
 
 #camera {
-    width: 100vw;
-    height: 100vh;
+    filter: contrast(85%);
 }
 
-#microphone {
-    display: none;
+#menu {
+    height: 64px;
+    background: rgba(37, 37, 37, 0.6);
+}
+
+#volume {
+    height: 8px;
+    appearance: none;
+    border-radius: 25px;
+    background-color: rgb(46, 46, 46);
+}
+
+.spacer {
+    flex-grow: 1;
 }
