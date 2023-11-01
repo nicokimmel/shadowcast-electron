@@ -3,7 +3,8 @@ Shows the videostream of [ShadowCast by Genki](https://www.genkithings.com/produ
 
 ## Use cases
 
-- Using the ShadowCast on Linux (without Google Chrome)
+- Avoiding Google Chrome
+- Using the ShadowCast on Linux
 - Avoiding the Windows Store
 
 ## To do
