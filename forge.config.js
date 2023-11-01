@@ -12,8 +12,7 @@ module.exports = {
   rebuildConfig: {},
   makers: [
     {
-      name: "@electron-forge/maker-zip",
-      platforms: ["linux"],
+      name: "@electron-forge/maker-zip"
     }
   ]
 };
