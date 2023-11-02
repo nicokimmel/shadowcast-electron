@@ -6,7 +6,7 @@
   <url type="homepage">https://github.com/nicokimmel/shadowcast-electron</url>
   <summary>Shows the videostream of ShadowCast by Genki</summary>
   <description>
-    <p>This app is an alternative to the Windows and MacOS only versions of Arcade Genki.
+    <p>This app is an alternative to the Windows and MacOS only versions of Genki Arcade.
         It shows the output of the capture card and has a very minimalistic design.</p>
     <p>Note: You need a ShadowCast by Genki to really use this application.</p>
   </description>
