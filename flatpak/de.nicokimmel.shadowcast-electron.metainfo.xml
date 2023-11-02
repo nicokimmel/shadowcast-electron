@@ -1,28 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="desktop-application">
   <id>de.nicokimmel.shadowcast-electron</id>
-  <launchable type="desktop-id">de.nicokimmel.shadowcast-electron.desktop</launchable>
   <name>shadowcast-electron</name>
-  <summary>Shows the videostream of ShadowCast by Genki</summary>
-  <metadata_license>CC0-1.0</metadata_license>
-  <project_license>GPL-3.0</project_license>
   <developer_name>Nico Kimmel</developer_name>
   <url type="homepage">https://github.com/nicokimmel/shadowcast-electron</url>
-  <content_rating type="oars-1.0" />
-  <provides>
-    <id>de.nicokimmel.shadowcast-electron.desktop</id>
-  </provides>
+  <summary>Shows the videostream of ShadowCast by Genki</summary>
   <description>
-    <p>Shows the videostream of ShadowCast by Genki</p>
+    <p>This app is an alternative to the Windows and MacOS only versions of Arcade Genki.
+        It shows the output of the capture card and has a very minimalistic design.</p>
+    <p>Note: You need a ShadowCast by Genki to really use this application.</p>
   </description>
+  <categories>
+    <category>Game</category>
+    <category>Utility</category>
+  </categories>
+  <keywords>
+    <keyword translate="no">ShadowCast</keyword>
+    <keyword translate="no">Genki</keyword>
+    <keyword translate="no">Nintendo</keyword>
+    <keyword translate="no">Switch</keyword>
+  </keywords>
   <screenshots>
-    <screenshot type="default">
+    <screenshot type="default" xml:lang="de">
       <image type="source">https://raw.githubusercontent.com/nicokimmel/shadowcast-electron/main/flatpak/screenshots/1.png</image>
+      <caption>Showing the Switch home menu</caption>
+    </screenshot>
+    <screenshot xml:lang="de">
       <image type="source">https://raw.githubusercontent.com/nicokimmel/shadowcast-electron/main/flatpak/screenshots/2.png</image>
+      <caption>Menu at the bottom of the app</caption>
     </screenshot>
   </screenshots>
   <releases>
     <release version="1.0.1" date="2023-11-01"/>
     <release version="1.0.0" date="2023-10-31"/>
   </releases>
+  <launchable type="desktop-id">de.nicokimmel.shadowcast-electron.desktop</launchable>
+  <provides>
+    <id>de.nicokimmel.shadowcast-electron.desktop</id>
+  </provides>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0</project_license>
+  <content_rating type="oars-1.0" />
 </component>
