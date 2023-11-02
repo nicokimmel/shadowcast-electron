@@ -21,11 +21,11 @@
     <keyword translate="no">Switch</keyword>
   </keywords>
   <screenshots>
-    <screenshot type="default" xml:lang="de">
+    <screenshot type="default">
       <image type="source">https://raw.githubusercontent.com/nicokimmel/shadowcast-electron/main/flatpak/screenshots/1.png</image>
       <caption>Showing the Switch home menu</caption>
     </screenshot>
-    <screenshot xml:lang="de">
+    <screenshot>
       <image type="source">https://raw.githubusercontent.com/nicokimmel/shadowcast-electron/main/flatpak/screenshots/2.png</image>
       <caption>Menu at the bottom of the app</caption>
     </screenshot>
