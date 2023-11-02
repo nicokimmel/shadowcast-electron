@@ -31,8 +31,16 @@
     </screenshot>
   </screenshots>
   <releases>
-    <release version="1.0.1" date="2023-11-01"/>
-    <release version="1.0.0" date="2023-10-31"/>
+    <release version="1.0.1" date="2023-11-01">
+      <description>
+        <p>Added bottom menu and implemented screenshot button as well as volume slider.</p>
+      </description>
+    </release>
+    <release version="1.0.0" date="2023-10-31">
+      <description>
+        <p>Initial release</p>
+      </description>
+    </release>
   </releases>
   <launchable type="desktop-id">de.nicokimmel.shadowcast-electron.desktop</launchable>
   <provides>
