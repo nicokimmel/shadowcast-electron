@@ -6,6 +6,7 @@ window.addEventListener("mousemove", (event) => {
 var volumeSlider = document.getElementById("volume")
 volumeSlider.addEventListener("input", () => {
     setVolume(volumeSlider.value)
+    settings.audio.volume = volumeSlider.value
 }, false)
 setVolume(50, true)
 
