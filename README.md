@@ -23,7 +23,7 @@ You can also get it from Flathub:
 
 ### Windows and MacOS
 
-You have to build it yourself.
+You have to build it yourself (currently).
 
 ## Build it yourself
 

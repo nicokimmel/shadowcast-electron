@@ -31,6 +31,11 @@
     </screenshot>
   </screenshots>
   <releases>
+    <release version="1.0.2" date="2023-11-19">
+      <description>
+        <p>Settings will now be saved. Implemented resolution selection.</p>
+      </description>
+    </release>
     <release version="1.0.1" date="2023-11-01">
       <description>
         <p>Added bottom menu and implemented screenshot button as well as volume slider.</p>

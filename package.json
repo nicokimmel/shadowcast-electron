@@ -1,6 +1,6 @@
 {
   "name": "shadowcast-electron",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Shows the videostream of ShadowCast by Genki.",
   "repository": {
     "type": "git",
