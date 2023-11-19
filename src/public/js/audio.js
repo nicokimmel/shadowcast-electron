@@ -41,13 +41,14 @@ function startAudioStream() {
             })
             .catch(function (error) {
                 console.log("Cound not connect to microphone!")
+                console.log(error)
             })
     })
 }
 
-function setVolume(volume, slider) {
+function setVolume(volume, restore) {
     audioElement.volume = volume / 100
-    if (slider) {
+    if (restore) {
         volumeSlider.value = volume
     }
 }

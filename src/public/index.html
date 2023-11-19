@@ -19,12 +19,13 @@
                     class="bi bi-camera-fill"></i></button>
             <button type="button" class="btn btn-lg btn-primary fs-5" id="record" disabled><i
                     class="bi bi-camera-reels-fill"></i></button>
-            <div class="btn-group btn-group-lg" role="group" aria-label="Basic radio toggle button group">
-                <input type="radio" class="btn-check" name="btnradio" id="sd" autocomplete="off" disabled>
-                <label class="btn btn-outline-primary" for="btnradio1"><i class="bi bi-badge-sd-fill"></i></label>
-
-                <input type="radio" class="btn-check" name="btnradio" id="hd" autocomplete="off" disabled checked>
-                <label class="btn btn-outline-primary" for="btnradio2"><i class="bi bi-badge-hd-fill"></i></label>
+            <div class="btn-group btn-group-lg" role="group">
+                <input type="radio" class="btn-check" name="btnradio" id="sd" autocomplete="off">
+                <label class="btn btn-outline-primary" for="sd"><i class="bi bi-badge-sd-fill"></i></label>
+                <input type="radio" class="btn-check" name="btnradio" id="hd" autocomplete="off" checked>
+                <label class="btn btn-outline-primary" for="hd"><i class="bi bi-badge-hd-fill"></i></label>
+                <input type="radio" class="btn-check" name="btnradio" id="4k" autocomplete="off" disabled>
+                <label class="btn btn-outline-primary" for="4k"><i class="bi bi-badge-4k-fill"></i></label>
             </div>
             <div class="spacer"></div>
             <input type="range" id="volume" min="0" max="100">

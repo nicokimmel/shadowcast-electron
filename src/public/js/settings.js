@@ -1,8 +1,6 @@
 const defaultSettings = {
     video: {
-        width: 1920,
-        height: 1080,
-        fps: 30
+        resolution: "hd"
     },
     audio: {
         volume: 50
@@ -19,8 +17,9 @@ function loadSettings() {
     if("settings" in localStorage) {
         settings = JSON.parse(localStorage.getItem("settings"))
     }
-    console.log("Loaded settings")
+    console.log("Loaded settings!")
     console.log(settings)
+    setResolution(settings.video.resolution, true)
     setVolume(settings.audio.volume, true)
 }
 
