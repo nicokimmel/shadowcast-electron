@@ -13,7 +13,7 @@ function getVideoDeviceId(callback) {
     navigator.mediaDevices.enumerateDevices().then(function (devices) {
         let deviceId = null
         devices.forEach((device) => {
-            if (device.label.startsWith("ShadowCast") && device.kind === "videoinput") {
+            if (device.label.includes("ShadowCast") && device.kind === "videoinput") {
                 console.log("ShadowCast Video Device found!")
                 console.log(device)
                 deviceId = device.deviceId
