@@ -9,8 +9,8 @@ Shows the videostream of [ShadowCast by Genki](https://www.genkithings.com/produ
 
 ## To do
 
-- Resolution selection
 - Recordings
+- 4k resolution for ShadowCast 2
 
 ## Installation
 
