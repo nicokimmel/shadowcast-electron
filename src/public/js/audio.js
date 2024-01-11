@@ -18,7 +18,7 @@ function getAudioDeviceId(callback) {
     navigator.mediaDevices.enumerateDevices().then(function (devices) {
         let deviceId = null
         devices.forEach((device) => {
-            if (device.label.startsWith("ShadowCast") && device.kind === "audioinput") {
+            if (device.label.includes("ShadowCast") && device.kind === "audioinput") {
                 console.log("ShadowCast Audio Device found!")
                 console.log(device)
                 deviceId = device.deviceId
